@@ -1,0 +1,25 @@
+{
+    "schemaVersion": 1,
+    "id": "tiko-utility",
+    "version": "${version}",
+    "name": "Tiko Utility",
+    "description": "A server-side utility mod providing essential player commands and server management tools.",
+    "authors": ["Tokioshy"],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/tiko-utility/icon.png",
+    "environment": "server",
+    "entrypoints": {
+        "main": ["com.tokioshy.TikoUtility"]
+    },
+    "mixins": ["tiko-utility.mixins.json"],
+    "depends": {
+        "fabricloader": ">=0.19.5",
+        "minecraft": "~26.3",
+        "java": ">=25",
+        "fabric-api": "*"
+    }
+}
